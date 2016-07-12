@@ -1,10 +1,7 @@
 from functools import reduce
 
 def add(*args):
-    if validate(args):
-        return sum(args)
-    else:
-        raise InvalidParams
+    return sum(args)
 
 def subtract(*args):
     return args[0] + -1*add(*args[1:])
@@ -24,8 +21,4 @@ def divide(*args):
     else:
         return 0
 
-def validate(args):
-    if any(isinstance(a, str) for a in args):
-        return False
-    else:
-        return True
+
