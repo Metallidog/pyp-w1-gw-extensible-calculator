@@ -7,10 +7,7 @@ def subtract(*args):
     return args[0] + -1*add(*args[1:])
 
 def multiply(*args):
-    if args:
-        return reduce(lambda a,b: a*b, args) 
-    else:
-        return 0
+    return reduce(lambda a,b: a*b, args) if args else 0
 
 def divide(*args):
     if args:
