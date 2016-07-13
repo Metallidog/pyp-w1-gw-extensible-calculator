@@ -17,5 +17,4 @@ def divide(*args):
             return args[0]
     else:
         return 0
-
-
+        

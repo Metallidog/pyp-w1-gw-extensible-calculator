@@ -79,6 +79,6 @@ def repeat_last_operation(calc):
     Returns the result of the last operation executed in the history.
     """
     if calc['history']:
-        return calc['operations'][calc['history'][-1][1]](*calc['history'][-1][2])
+        return calc['history'][-1][-1]
     else:
         None
